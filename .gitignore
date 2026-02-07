@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environment
+venv/
+5ghack/
+
+# OS
+.DS_Store
+
+# YOLO weights (optional)
+*.pt

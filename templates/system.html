@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2 class="page-title">System Overview</h2>
+
+<div class="dashboard-layout">
+
+    <div class="panel">
+        <div class="panel-header">CAMERA</div>
+        <p>Status: <b style="color:#22c55e;">ONLINE</b></p>
+        <p>Source: Laptop Webcam</p>
+        <p>Resolution: 640 × 480</p>
+    </div>
+
+    <div class="panel">
+        <div class="panel-header">AI MODEL</div>
+        <p>Model: YOLOv8 Nano</p>
+        <p>Inference: CPU</p>
+        <p>Purpose: Person detection</p>
+    </div>
+
+    <div class="panel">
+        <div class="panel-header">INTRUSION LOGIC</div>
+        <p>Restricted Area: User-defined ROI</p>
+        <p>Trigger: Person inside ROI</p>
+        <p>Alert: Real-time</p>
+    </div>
+
+    <div class="panel">
+        <div class="panel-header">RECORDING</div>
+        <p>Mode: Automatic</p>
+        <p>Trigger: Intrusion detected</p>
+        <p>Storage: Local MP4</p>
+    </div>
+
+    <div class="panel">
+        <div class="panel-header">LOGGING</div>
+        <p>Format: JSON</p>
+        <p>Stored Fields:</p>
+        <ul style="color:#64748b;">
+            <li>Start time</li>
+            <li>End time</li>
+            <li>Duration</li>
+            <li>People count</li>
+        </ul>
+    </div>
+
+    <div class="panel">
+        <div class="panel-header">ARCHITECTURE</div>
+        <p>Edge Processing: Laptop</p>
+        <p>Web Framework: Flask</p>
+        <p>Visualization: Web Dashboard</p>
+    </div>
+
+</div>
+
+{% endblock %}

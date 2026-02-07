@@ -1,0 +1,211 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', system-ui, sans-serif;
+    background: radial-gradient(circle at top, #111827, #0b0f1a);
+    color: #e5e7eb;
+}
+
+/* ---------- TOP BAR ---------- */
+.topbar {
+    background: linear-gradient(90deg, #22d3ee, #a78bfa);
+    color: #0b0f1a;
+    padding: 18px 26px;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    box-shadow: 0 0 40px rgba(34,211,238,0.45);
+}
+
+/* ---------- SIDEBAR ---------- */
+.sidebar {
+    position: fixed;
+    top: 68px;
+    left: 0;
+    width: 230px;
+    height: 100%;
+    background: rgba(17,24,39,0.75);
+    backdrop-filter: blur(16px);
+    border-right: 1px solid rgba(255,255,255,0.05);
+    padding-top: 20px;
+}
+
+.sidebar a {
+    display: block;
+    padding: 14px 22px;
+    text-decoration: none;
+    color: #e5e7eb;
+    font-weight: 500;
+    border-left: 4px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.sidebar a:hover {
+    background: linear-gradient(90deg, rgba(34,211,238,0.15), transparent);
+    border-left: 4px solid #22d3ee;
+    color: #22d3ee;
+}
+
+/* ---------- CONTENT ---------- */
+.content {
+    margin-left: 250px;
+    padding: 36px;
+}
+
+.page-title {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 28px;
+}
+
+/* ---------- GRID ---------- */
+.dashboard-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 28px;
+}
+
+/* ---------- PANELS ---------- */
+.panel {
+    background: rgba(17,24,39,0.75);
+    backdrop-filter: blur(18px);
+    border-radius: 18px;
+    padding: 22px;
+    border: 1px solid rgba(255,255,255,0.06);
+    box-shadow:
+        0 20px 60px rgba(0,0,0,0.55),
+        inset 0 0 0 1px rgba(255,255,255,0.02);
+    transition: all 0.3s ease;
+}
+
+.panel:hover {
+    transform: translateY(-4px);
+    box-shadow:
+        0 25px 70px rgba(0,0,0,0.65),
+        0 0 40px rgba(34,211,238,0.18);
+}
+
+.panel-header {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    color: #22d3ee;
+    margin-bottom: 14px;
+}
+
+/* ---------- VIDEO ---------- */
+.video-frame {
+    width: 100%;
+    border-radius: 16px;
+    border: 1px solid rgba(255,255,255,0.08);
+    box-shadow: 0 0 40px rgba(34,211,238,0.25);
+}
+
+/* ---------- STATUS ---------- */
+.status-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.status-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 17px;
+}
+
+.value {
+    font-weight: 600;
+}
+
+/* ---------- COLORS ---------- */
+.safe {
+    color: #22c55e;
+}
+
+.danger {
+    color: #ef4444;
+}
+
+.online {
+    color: #22d3ee;
+}
+
+/* ---------- SYSTEM MESSAGE ---------- */
+.system-message {
+    margin-top: 26px;
+    padding: 16px 18px;
+    border-radius: 14px;
+    background: linear-gradient(90deg, rgba(34,211,238,0.15), transparent);
+    border-left: 6px solid #22d3ee;
+    font-weight: 500;
+    box-shadow: 0 0 30px rgba(34,211,238,0.25);
+}
+
+.system-message.danger {
+    background: linear-gradient(90deg, rgba(239,68,68,0.2), transparent);
+    border-left-color: #ef4444;
+    box-shadow: 0 0 40px rgba(239,68,68,0.35);
+}
+
+/* ---------- BIG NUMBERS ---------- */
+.big-number {
+    font-size: 38px;
+    font-weight: 700;
+    color: #22d3ee;
+    text-shadow: 0 0 25px rgba(34,211,238,0.6);
+}
+
+/* ---------- TABLE ---------- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th {
+    background: rgba(34,211,238,0.12);
+    padding: 14px;
+    text-align: left;
+    font-weight: 600;
+}
+
+td {
+    padding: 14px;
+    border-top: 1px solid rgba(255,255,255,0.06);
+    color: #d1d5db;
+}
+
+tr:hover {
+    background: rgba(34,211,238,0.08);
+}
+
+/* ---------- PULSE ---------- */
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(239,68,68,0.6); }
+    70% { box-shadow: 0 0 0 16px rgba(239,68,68,0); }
+    100% { box-shadow: 0 0 0 0 rgba(239,68,68,0); }
+}
+
+.pulse {
+    animation: pulse 1.5s infinite;
+}
+.warn-btn {
+    background: linear-gradient(90deg, #38e8ff, #7c7cff);
+    border: none;
+    padding: 8px 18px;
+    border-radius: 999px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #0d1117;
+    box-shadow: 0 0 20px rgba(56,232,255,0.6);
+    transition: all 0.25s ease;
+}
+
+.warn-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(124,124,255,0.8);
+}

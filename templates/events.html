@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2 class="page-title">Intrusion Events</h2>
+
+<div class="panel">
+    <div class="panel-header">EVENT LOGS</div>
+
+    <table id="eventsTable">
+        <thead>
+            <tr>
+                <th>Event ID</th>
+                <th>Start Time</th>
+                <th>End Time</th>
+                <th>Duration (sec)</th>
+                <th>People</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Rows added dynamically -->
+        </tbody>
+    </table>
+</div>
+
+<script>
+async function loadEvents() {
+    const res = await fetch("/api/events");
+    const data = await res.json();
+
+    const tbody = document.querySelector("#eventsTable tbody");
+    tbody.innerHTML = "";
+
+    if (data.length === 0) {
+        tbody.innerHTML = `
+            <tr>
+                <td colspan="5" style="text-align:center; color:#64748b;">
+                    No intrusion events recorded
+                </td>
+            </tr>
+        `;
+        return;
+    }
+
+    data.forEach(event => {
+        const row = `
+            <tr>
+                <td>${event.event_id}</td>
+                <td>${event.start_time}</td>
+                <td>${event.end_time}</td>
+                <td>${event.duration_sec}</td>
+                <td>${event.people_count}</td>
+            </tr>
+        `;
+        tbody.innerHTML += row;
+    });
+}
+
+// Load initially and refresh every 2 seconds
+loadEvents();
+setInterval(loadEvents, 2000);
+</script>
+
+{% endblock %}

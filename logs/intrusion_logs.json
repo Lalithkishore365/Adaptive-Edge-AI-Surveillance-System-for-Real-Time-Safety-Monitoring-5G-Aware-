@@ -1,0 +1,376 @@
+[
+    {
+        "event_id": "evt_001",
+        "start_time": "2026-02-07 22:12:22",
+        "end_time": "2026-02-07 22:12:35",
+        "duration_sec": 13.01,
+        "people_count": 1,
+        "avg_confidence": 0.62
+    },
+    {
+        "event_id": "evt_001",
+        "start_time": "2026-02-07 22:20:50",
+        "end_time": "2026-02-07 22:21:15",
+        "duration_sec": 25.03,
+        "people_count": 4,
+        "avg_confidence": 0.62
+    },
+    {
+        "event_id": "evt_002",
+        "start_time": "2026-02-07 22:21:16",
+        "end_time": "2026-02-07 22:22:29",
+        "duration_sec": 73.44,
+        "people_count": 1,
+        "avg_confidence": 0.7
+    },
+    {
+        "event_id": "evt_001",
+        "start_time": "2026-02-07 23:21:24",
+        "end_time": "2026-02-07 23:22:04",
+        "duration_sec": 40.0,
+        "people_count": 0
+    },
+    {
+        "event_id": "evt_001",
+        "start_time": "2026-02-07 23:26:19",
+        "end_time": "2026-02-07 23:26:59",
+        "duration_sec": 39.33,
+        "people_count": 0
+    },
+    {
+        "event_id": "evt_002",
+        "start_time": "2026-02-07 23:28:01",
+        "end_time": "2026-02-07 23:28:01",
+        "duration_sec": 0.3,
+        "people_count": 1
+    },
+    {
+        "event_id": "evt_001",
+        "start_time": "2026-02-07 23:46:50",
+        "end_time": "2026-02-07 23:46:58",
+        "duration_sec": 7.1,
+        "people_count": 0
+    },
+    {
+        "event_id": "evt_002",
+        "start_time": "2026-02-07 23:46:58",
+        "end_time": "2026-02-07 23:46:58",
+        "duration_sec": 0.42,
+        "people_count": 0
+    },
+    {
+        "event_id": "evt_001",
+        "start_time": "2026-02-07 23:48:16",
+        "end_time": "2026-02-07 23:49:01",
+        "duration_sec": 45.4,
+        "people_count": 0
+    },
+    {
+        "event_id": "evt_002",
+        "start_time": "2026-02-07 23:50:23",
+        "end_time": "2026-02-07 23:50:41",
+        "duration_sec": 18.06,
+        "people_count": 0
+    },
+    {
+        "event_id": "evt_001",
+        "start_time": "2026-02-08 00:02:01",
+        "end_time": "2026-02-08 00:02:10",
+        "duration_sec": 9.24,
+        "people_count": 0
+    },
+    {
+        "event_id": "evt_002",
+        "start_time": "2026-02-08 00:03:27",
+        "end_time": "2026-02-08 00:03:30",
+        "duration_sec": 3.61,
+        "people_count": 1
+    },
+    {
+        "event_id": "evt_003",
+        "start_time": "2026-02-08 00:03:32",
+        "end_time": "2026-02-08 00:03:32",
+        "duration_sec": 0.16,
+        "people_count": 1
+    },
+    {
+        "event_id": "evt_004",
+        "start_time": "2026-02-08 00:03:32",
+        "end_time": "2026-02-08 00:03:35",
+        "duration_sec": 3.4,
+        "people_count": 1
+    },
+    {
+        "event_id": "evt_005",
+        "start_time": "2026-02-08 00:03:37",
+        "end_time": "2026-02-08 00:03:37",
+        "duration_sec": 0.14,
+        "people_count": 0
+    },
+    {
+        "event_id": "evt_006",
+        "start_time": "2026-02-08 00:03:40",
+        "end_time": "2026-02-08 00:03:40",
+        "duration_sec": 0.15,
+        "people_count": 1
+    },
+    {
+        "event_id": "evt_007",
+        "start_time": "2026-02-08 00:03:41",
+        "end_time": "2026-02-08 00:03:41",
+        "duration_sec": 0.16,
+        "people_count": 1
+    },
+    {
+        "event_id": "evt_008",
+        "start_time": "2026-02-08 00:03:41",
+        "end_time": "2026-02-08 00:03:41",
+        "duration_sec": 0.4,
+        "people_count": 1
+    },
+    {
+        "event_id": "evt_009",
+        "start_time": "2026-02-08 00:03:42",
+        "end_time": "2026-02-08 00:03:42",
+        "duration_sec": 0.16,
+        "people_count": 1
+    },
+    {
+        "event_id": "evt_010",
+        "start_time": "2026-02-08 00:03:52",
+        "end_time": "2026-02-08 00:03:52",
+        "duration_sec": 0.18,
+        "people_count": 1
+    },
+    {
+        "event_id": "evt_001",
+        "start_time": "2026-02-08 00:25:20",
+        "end_time": "2026-02-08 00:25:41",
+        "duration_sec": 20.96,
+        "people_count": 0
+    },
+    {
+        "event_id": "evt_002",
+        "start_time": "2026-02-08 00:27:30",
+        "end_time": "2026-02-08 00:27:43",
+        "duration_sec": 13.0,
+        "people_count": 1
+    },
+    {
+        "event_id": "evt_003",
+        "start_time": "2026-02-08 00:29:40",
+        "end_time": "2026-02-08 00:29:41",
+        "duration_sec": 0.51,
+        "people_count": 0
+    },
+    {
+        "event_id": "evt_001",
+        "start_time": "2026-02-08 01:39:53",
+        "end_time": "2026-02-08 01:41:36",
+        "duration_sec": 103.1,
+        "people_count": 0
+    },
+    {
+        "event_id": "evt_002",
+        "start_time": "2026-02-08 01:41:43",
+        "end_time": "2026-02-08 01:41:47",
+        "duration_sec": 3.81,
+        "people_count": 2
+    },
+    {
+        "event_id": "evt_003",
+        "start_time": "2026-02-08 01:41:47",
+        "end_time": "2026-02-08 01:42:00",
+        "duration_sec": 12.98,
+        "people_count": 8
+    },
+    {
+        "event_id": "evt_004",
+        "start_time": "2026-02-08 01:42:01",
+        "end_time": "2026-02-08 01:42:04",
+        "duration_sec": 3.26,
+        "people_count": 8
+    },
+    {
+        "event_id": "evt_005",
+        "start_time": "2026-02-08 01:42:04",
+        "end_time": "2026-02-08 01:42:09",
+        "duration_sec": 5.13,
+        "people_count": 9
+    },
+    {
+        "event_id": "evt_006",
+        "start_time": "2026-02-08 01:42:09",
+        "end_time": "2026-02-08 01:42:10",
+        "duration_sec": 0.57,
+        "people_count": 8
+    },
+    {
+        "event_id": "evt_007",
+        "start_time": "2026-02-08 01:42:10",
+        "end_time": "2026-02-08 01:42:10",
+        "duration_sec": 0.11,
+        "people_count": 8
+    },
+    {
+        "event_id": "evt_008",
+        "start_time": "2026-02-08 01:42:10",
+        "end_time": "2026-02-08 01:42:11",
+        "duration_sec": 0.23,
+        "people_count": 6
+    },
+    {
+        "event_id": "evt_009",
+        "start_time": "2026-02-08 01:42:11",
+        "end_time": "2026-02-08 01:42:11",
+        "duration_sec": 0.65,
+        "people_count": 8
+    },
+    {
+        "event_id": "evt_010",
+        "start_time": "2026-02-08 01:42:12",
+        "end_time": "2026-02-08 01:42:12",
+        "duration_sec": 0.46,
+        "people_count": 6
+    },
+    {
+        "event_id": "evt_011",
+        "start_time": "2026-02-08 01:42:12",
+        "end_time": "2026-02-08 01:42:16",
+        "duration_sec": 3.86,
+        "people_count": 9
+    },
+    {
+        "event_id": "evt_012",
+        "start_time": "2026-02-08 01:42:16",
+        "end_time": "2026-02-08 01:42:16",
+        "duration_sec": 0.31,
+        "people_count": 7
+    },
+    {
+        "event_id": "evt_013",
+        "start_time": "2026-02-08 01:42:16",
+        "end_time": "2026-02-08 01:42:17",
+        "duration_sec": 0.84,
+        "people_count": 7
+    },
+    {
+        "event_id": "evt_014",
+        "start_time": "2026-02-08 01:42:17",
+        "end_time": "2026-02-08 01:42:52",
+        "duration_sec": 34.83,
+        "people_count": 5
+    },
+    {
+        "event_id": "evt_015",
+        "start_time": "2026-02-08 01:42:52",
+        "end_time": "2026-02-08 01:42:52",
+        "duration_sec": 0.13,
+        "people_count": 5
+    },
+    {
+        "event_id": "evt_016",
+        "start_time": "2026-02-08 01:42:53",
+        "end_time": "2026-02-08 01:43:06",
+        "duration_sec": 13.7,
+        "people_count": 6
+    },
+    {
+        "event_id": "evt_017",
+        "start_time": "2026-02-08 01:43:06",
+        "end_time": "2026-02-08 01:43:53",
+        "duration_sec": 46.68,
+        "people_count": 7
+    },
+    {
+        "event_id": "evt_018",
+        "start_time": "2026-02-08 01:43:53",
+        "end_time": "2026-02-08 01:43:59",
+        "duration_sec": 5.57,
+        "people_count": 6
+    },
+    {
+        "event_id": "evt_019",
+        "start_time": "2026-02-08 01:43:59",
+        "end_time": "2026-02-08 01:44:00",
+        "duration_sec": 0.21,
+        "people_count": 6
+    },
+    {
+        "event_id": "evt_020",
+        "start_time": "2026-02-08 01:44:00",
+        "end_time": "2026-02-08 01:44:01",
+        "duration_sec": 1.14,
+        "people_count": 8
+    },
+    {
+        "event_id": "evt_021",
+        "start_time": "2026-02-08 01:44:01",
+        "end_time": "2026-02-08 01:44:43",
+        "duration_sec": 42.01,
+        "people_count": 7
+    },
+    {
+        "event_id": "evt_022",
+        "start_time": "2026-02-08 01:44:43",
+        "end_time": "2026-02-08 01:44:43",
+        "duration_sec": 0.13,
+        "people_count": 5
+    },
+    {
+        "event_id": "evt_023",
+        "start_time": "2026-02-08 01:44:43",
+        "end_time": "2026-02-08 01:45:13",
+        "duration_sec": 29.99,
+        "people_count": 8
+    },
+    {
+        "event_id": "evt_024",
+        "start_time": "2026-02-08 01:45:14",
+        "end_time": "2026-02-08 01:45:14",
+        "duration_sec": 0.26,
+        "people_count": 6
+    },
+    {
+        "event_id": "evt_025",
+        "start_time": "2026-02-08 01:45:14",
+        "end_time": "2026-02-08 01:45:40",
+        "duration_sec": 25.9,
+        "people_count": 3
+    },
+    {
+        "event_id": "evt_026",
+        "start_time": "2026-02-08 01:45:40",
+        "end_time": "2026-02-08 01:45:41",
+        "duration_sec": 0.62,
+        "people_count": 3
+    },
+    {
+        "event_id": "evt_027",
+        "start_time": "2026-02-08 01:45:41",
+        "end_time": "2026-02-08 01:45:42",
+        "duration_sec": 1.18,
+        "people_count": 5
+    },
+    {
+        "event_id": "evt_028",
+        "start_time": "2026-02-08 01:45:43",
+        "end_time": "2026-02-08 01:45:52",
+        "duration_sec": 9.4,
+        "people_count": 6
+    },
+    {
+        "event_id": "evt_029",
+        "start_time": "2026-02-08 01:45:52",
+        "end_time": "2026-02-08 01:45:55",
+        "duration_sec": 2.73,
+        "people_count": 1
+    },
+    {
+        "event_id": "evt_030",
+        "start_time": "2026-02-08 01:45:55",
+        "end_time": "2026-02-08 01:45:58",
+        "duration_sec": 3.18,
+        "people_count": 0
+    }
+]

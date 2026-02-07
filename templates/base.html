@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <!-- Top Bar -->
+    <div class="topbar">
+        AI Surveillance System
+    </div>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="/">🏠 Dashboard</a>
+        <a href="/live">🎥 Live Monitoring</a>
+        <a href="/events">🚨 Events</a>
+        <a href="/analytics">📊 Analytics</a>
+        <a href="/system">🧠 System</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>

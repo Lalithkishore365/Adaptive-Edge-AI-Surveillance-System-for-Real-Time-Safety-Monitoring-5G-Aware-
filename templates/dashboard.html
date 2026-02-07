@@ -1,0 +1,95 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2 class="page-title">AI Surveillance Dashboard</h2>
+
+<div class="dashboard-layout">
+
+    <!-- Live AI Feed -->
+    <div class="panel">
+        <div class="panel-header">LIVE AI FEED</div>
+        <img src="/video_ai" class="video-frame">
+    </div>
+
+    <!-- Status Panel -->
+    <div class="panel status-panel">
+        <div class="panel-header">SYSTEM STATUS</div>
+
+        <div class="status-item">
+            <span>👤 People Detected</span>
+            <span id="personCount" class="value">0</span>
+        </div>
+
+        <div class="status-item">
+            <span>🛡 Restricted Area</span>
+            <span id="intrusionStatus" class="value safe">SAFE</span>
+        </div>
+
+        <div class="status-item">
+            <span>📷 Camera</span>
+            <span class="value online">ONLINE</span>
+        </div>
+
+        <div class="status-item">
+            <span>⚠ Manual Warning</span>
+            <button id="warnBtn" class="warn-btn">WARN</button>
+        </div>
+    </div>
+
+</div>
+
+<!-- System Message -->
+<div id="systemMessage" class="system-message">
+    System running normally
+</div>
+
+<!-- =========================
+     DASHBOARD SCRIPT
+========================= -->
+<script>
+const personCountEl = document.getElementById("personCount");
+const intrusionStatusEl = document.getElementById("intrusionStatus");
+const systemMessageEl = document.getElementById("systemMessage");
+const warnBtn = document.getElementById("warnBtn");
+
+/* Visual pulse + message */
+function setIntrusionVisual(active) {
+    intrusionStatusEl.classList.toggle("pulse", active);
+    systemMessageEl.classList.toggle("danger", active);
+}
+
+/* Fetch live data */
+async function updateCounts() {
+    try {
+        const res = await fetch("/api/counts");
+        const data = await res.json();
+
+        personCountEl.innerText = data.person;
+
+        if (data.intrusion) {
+            intrusionStatusEl.innerText = "INTRUSION";
+            intrusionStatusEl.className = "value danger";
+            systemMessageEl.innerText = "⚠ Restricted area breach detected";
+        } else {
+            intrusionStatusEl.innerText = "SAFE";
+            intrusionStatusEl.className = "value safe";
+            systemMessageEl.innerText = "System running normally";
+        }
+
+        setIntrusionVisual(data.intrusion);
+    } catch (err) {
+        console.error("Dashboard fetch error:", err);
+    }
+}
+
+/* Manual WARN button */
+warnBtn.onclick = async () => {
+    await fetch("/api/warn", { method: "POST" });
+};
+
+/* Auto refresh */
+setInterval(updateCounts, 1000);
+updateCounts();
+</script>
+
+{% endblock %}

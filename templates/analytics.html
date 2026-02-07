@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2 class="page-title">Analytics</h2>
+
+<div class="dashboard-layout">
+
+    <div class="panel">
+        <div class="panel-header">TOTAL INTRUSIONS</div>
+        <div class="big-number" id="totalEvents">0</div>
+    </div>
+
+    <div class="panel">
+        <div class="panel-header">AVG DURATION (SEC)</div>
+        <div class="big-number" id="avgDuration">0</div>
+    </div>
+
+</div>
+
+<div class="panel" style="margin-top:30px;">
+    <div class="panel-header">INTRUSION DURATION TREND</div>
+    <canvas id="durationChart" height="120"></canvas>
+</div>
+
+<!-- Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+let chart;
+
+async function loadAnalytics() {
+    const res = await fetch("/api/events");
+    const data = await res.json();
+
+    document.getElementById("totalEvents").innerText = data.length;
+
+    if (data.length === 0) return;
+
+    const durations = data.map(e => e.duration_sec);
+    const labels = data.map(e => e.event_id);
+
+    const avg = durations.reduce((a,b)=>a+b,0)/durations.length;
+    document.getElementById("avgDuration").innerText = avg.toFixed(2);
+
+    if (chart) chart.destroy();
+
+    const ctx = document.getElementById("durationChart").getContext("2d");
+    chart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: labels,
+            datasets: [{
+                label: 'Duration (sec)',
+                data: durations,
+                backgroundColor: 'rgba(56,232,255,0.6)',
+                borderRadius: 6
+            }]
+        },
+        options: {
+            plugins: {
+                legend: { display: false }
+            },
+            scales: {
+                x: {
+                    ticks: { color: '#9ca3af' },
+                    grid: { display: false }
+                },
+                y: {
+                    ticks: { color: '#9ca3af' },
+                    grid: { color: 'rgba(255,255,255,0.05)' }
+                }
+            }
+        }
+    });
+}
+
+loadAnalytics();
+setInterval(loadAnalytics, 5000);
+</script>
+
+{% endblock %}
