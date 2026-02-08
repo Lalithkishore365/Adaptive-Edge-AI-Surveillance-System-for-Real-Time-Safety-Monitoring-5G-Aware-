@@ -372,5 +372,40 @@
         "end_time": "2026-02-08 01:45:58",
         "duration_sec": 3.18,
         "people_count": 0
+    },
+    {
+        "event_id": "evt_054",
+        "start_time": "2026-02-08 05:00:37",
+        "end_time": "2026-02-08 05:00:45",
+        "duration_sec": 8.09,
+        "people_count": 0
+    },
+    {
+        "event_id": "evt_055",
+        "start_time": "2026-02-08 06:54:52",
+        "end_time": "2026-02-08 06:54:55",
+        "duration_sec": 2.94,
+        "people_count": 0
+    },
+    {
+        "event_id": "evt_056",
+        "start_time": "2026-02-08 06:54:56",
+        "end_time": "2026-02-08 06:54:59",
+        "duration_sec": 2.62,
+        "people_count": 0
+    },
+    {
+        "event_id": "evt_057",
+        "start_time": "2026-02-08 06:55:00",
+        "end_time": "2026-02-08 06:55:16",
+        "duration_sec": 16.29,
+        "people_count": 1
+    },
+    {
+        "event_id": "evt_058",
+        "start_time": "2026-02-08 06:55:17",
+        "end_time": "2026-02-08 06:55:18",
+        "duration_sec": 1.19,
+        "people_count": 0
     }
 ]
