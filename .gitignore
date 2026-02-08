@@ -11,3 +11,9 @@ venv/
 
 # YOLO weights (optional)
 *.pt
+
+# Recorded videos
+recordings/
+*.mp4
+*.avi
+*.mov
